@@ -7,7 +7,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const logger = morgan("dev");
 
-app.use(express.static(__dirname + "/public"));
+//view engine 세팅 
+app.set("view engine", "pug"); 
+app.set("views", process.cwd() + "/src/views"); //현재작업폴더(cwd) = node.js를 실행하는 파일(package.js)이 있는 폴더임.
+
+
+//app.use(express.static(__dirname + "/public"));
+
 app.use(logger);
 
 app.use((req, res, next) => {
