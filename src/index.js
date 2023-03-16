@@ -32,7 +32,9 @@ app.get("/", async (req, res) => {
     try {
         const notionData = await getNotionApi();
         console.log(notionData);
-        res.sendFile(__dirname + "/views/index.html",notionData);
+        //console.log(notionData[0].name)
+        res.render("home" , {pageTitle : "Home", notionData});
+        //res.sendFile(__dirname + "/views/index.html",notionData);
       } catch (err) {
         console.error(err);
       }

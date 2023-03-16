@@ -11,16 +11,18 @@ module.exports = async function getNotionApi() {
     database_id,
   });
 
-    const notionData = results.map((page) => {
+    const notionData = results.reverse().map((page) => {
       return {
         id: page.id,
         total: page.properties.total.number,
-        index: page.properties.index.number,
+        food: page.properties.food.number,
+        book: page.properties.book.number,
+        pencil: page.properties.pencil.number,
+        good: page.properties.good.number,
+        heart: page.properties.heart.number,
         name: page.properties.name.title[0].text.content,
       };
     });
 
-    // console.log(results);
     return notionData;
-  //return results;
 };
