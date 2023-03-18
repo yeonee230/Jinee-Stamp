@@ -14,7 +14,8 @@ block content
         each value in notionData
             tr
                 th=value.name
-                th=value.food
+                th
+                    a(href="/update")=value.food
                 th=value.book
                 th=value.pencil
                 th=value.good
