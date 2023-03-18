@@ -12,10 +12,12 @@ module.exports = async function getNotionApi() {
       database_id,
     });
   
+   
+    
     const notionData = results.reverse().map((page) => {
       return {
         id: page.id,
-        total: page.properties.total.number,
+        total: page.properties.total.formula.number,
         food: page.properties.food.number,
         book: page.properties.book.number,
         pencil: page.properties.pencil.number,

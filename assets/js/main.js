@@ -15,7 +15,7 @@
   \*******************************/
 /***/ (() => {
 
-eval("console.log('hello');\n\n//# sourceURL=webpack://jinee-stamp/./src/client/js/main.js?");
+eval("const btnFood = document.getElementById(\"btnFood\");\nconst btnBook = document.getElementById(\"btnBook\");\nconst user = document.getElementById(\"name\");\nconst tbody = document.querySelector('#position tbody');\nconst cells = document.querySelectorAll(\"#position td\");\nfor (var i = 0; i < cells.length; i++) {\n  cells[i].addEventListener(\"click\", async function () {\n    console.log('click!');\n    const page_id = this.dataset.id;\n    const name = this.dataset.name;\n    const point = Number(this.innerHTML) + 1;\n    await fetch(`/update/${page_id}`, {\n      method: \"POST\",\n      headers: {\n        \"Content-Type\": \"application/json\"\n      },\n      body: JSON.stringify({\n        point,\n        name\n      })\n    });\n  });\n}\n\n//# sourceURL=webpack://jinee-stamp/./src/client/js/main.js?");
 
 /***/ })
 

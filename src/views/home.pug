@@ -2,7 +2,7 @@ extends base
     
 block content
     header=pageTitle
-    table
+    table#position
         tr  
             th ⭐️이름⭐️
             th 밥 🍚
@@ -14,10 +14,11 @@ block content
         each value in notionData
             tr
                 th=value.name
-                th
-                    a(href="/update")=value.food
-                th=value.book
-                th=value.pencil
-                th=value.good
-                th=value.heart
-                th=value.total
+                td(data-id=value.id data-name="food")=value.food
+                    //- a(href="/" data-id=value.id )#btnFood=value.food
+                td(data-id=value.id data-name="book")=value.book
+                    //- a(href="/" data-id=value.id )#btnBook=value.book
+                td(data-id=value.id data-name="pencil")=value.pencil
+                td(data-id=value.id data-name="good")=value.good
+                td(data-id=value.id data-name="heart")=value.heart
+                th(data-id=value.id )=value.total
