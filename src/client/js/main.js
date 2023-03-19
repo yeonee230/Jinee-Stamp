@@ -21,6 +21,9 @@ for (var i = 0; i < cells.length; i++) {
             },
             body : JSON.stringify({point,name}),
           });
+
+          //화면에 표시 
+          this.innerHTML= `${point}`;
       }); 
   }
 
