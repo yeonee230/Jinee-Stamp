@@ -5,11 +5,11 @@
 ## 홈페이지 (Demo Homepage)
 www.홈페이지 링크
 ## 개발 목표 (Goals)
-* pug, scss, nodejs를 활용해 실제 사용할 수 있는 서비스 만들기 
+* pug, sass, nodejs를 활용해 실제 사용할 수 있는 서비스 만들기 
 * notion api를 사용해 노션을 DB로 활용하기 
 
 ## 사용 기술 (Technical Skills)
-* Front-end : Pug, Scss
+* Front-end : Pug, Sass
 * Back-end : NodeJS
 * Etc : NotionAPI
 
