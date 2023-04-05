@@ -17,7 +17,6 @@ www.홈페이지 링크
 ## 특징 (Advanced Features)
 * 반응형 
 
-## 기간 (Duration)
 
 ***
 ## ETC
