@@ -40,7 +40,7 @@ app.get("/", async (req, res) => {
   try {
     const notionData = await getNotionApi();
     // console.log(notionData);
-    res.render("home", { pageTitle: "Home", notionData });
+    res.render("home", { pageTitle: "칭찬 도장 💖 ", notionData });
   } catch (err) {
     console.error(err);
   }
