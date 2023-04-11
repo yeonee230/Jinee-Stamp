@@ -4,9 +4,12 @@
   "description": "stamp system for jinee",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec babel-node src/index.js",
-    "assets": "webpack --config webpack.config.js"
+    "start": "node build/init.js",
+    "build": "npm run build:server && npm run build:assets",
+    "build:assets": "webpack --mode=production",
+    "build:server": "babel src -d build --ignore src/client",
+    "dev:server": "nodemon",
+    "dev:assets": "webpack --mode=development -w"
   },
   "repository": {
     "type": "git",
