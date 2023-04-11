@@ -7,24 +7,18 @@ block content
             th 번호
             th ⭐️이름⭐️
             th 밥 🍚
-            th 책 📖
             th 연필 ✏️
             th 박수👏🏻
-            th 하트 ❤️
             th ⭐️합계⭐️ 
-            th 이름
-            th 번호
         each value in notionData
             tr
                 th=value.index
                 th=value.name
                 td(data-id=value.id data-name="food")=value.food ? value.food : 0
                     //- a(href="/" data-id=value.id )#btnFood=value.food
-                td(data-id=value.id data-name="book")=value.book ? value.book : 0
                     //- a(href="/" data-id=value.id )#btnBook=value.book
                 td(data-id=value.id data-name="pencil")=value.pencil ? value.pencil : 0
                 td(data-id=value.id data-name="good")=value.good ? value.good : 0
-                td(data-id=value.id data-name="heart")=value.heart ? value.heart : 0
                 th#total(data-id=value.id )=value.total
                 th=value.name
                 th=value.index

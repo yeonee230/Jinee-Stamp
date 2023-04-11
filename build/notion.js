@@ -28,10 +28,10 @@ module.exports = /*#__PURE__*/function () {
               index: page.properties.index.number,
               total: page.properties.total.formula.number,
               food: page.properties.food.number,
-              book: page.properties.book.number,
+              // book: page.properties.book.number,
               pencil: page.properties.pencil.number,
               good: page.properties.good.number,
-              heart: page.properties.heart.number,
+              // heart: page.properties.heart.number,
               name: page.properties.name.title[0].text.content
             };
           });
