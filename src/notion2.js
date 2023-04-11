@@ -7,7 +7,7 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 });
 
-module.exports = async function getNotionApi(id, name, point) {
+module.exports = async function updateNotion(id, name, point) {
   const page_id = id;
   console.log("name and point!! ", name, point);
 
@@ -47,4 +47,7 @@ module.exports = async function getNotionApi(id, name, point) {
       },
     });
   }
+
+  console.log('updated!');
+  
 };

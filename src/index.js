@@ -48,13 +48,23 @@ app.get("/", async (req, res) => {
 
 app.post("/update/:id", async (req, res) => {
   //notion에 변경사항 업데이트
-  const { id } = req.params;
-  const { point, name } = req.body;
+ 
+  try {
+    const { id } = req.params;
+    const { point, name } = req.body;
 
-  await updateNotion(id, name, point);
-  //변경된 notion data 다시 보여주기
-  const notionData = await getNotionApi();
-  return res.status(201).redirect("/");
+    await updateNotion(id, name, point);
+
+    // show the changed notion data again
+    console.log('here');
+    
+    return res.status(201).redirect("/");
+
+  } catch (error) {
+    console.error(error);
+    return res.status(500).send("Internal Server Error");
+  }
+
 });
 
 app.listen(PORT, () => console.log(`⭐️ Conneted server! PORT : ${PORT}`));

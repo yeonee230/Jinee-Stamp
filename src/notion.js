@@ -17,6 +17,7 @@ module.exports = async function getNotionApi() {
   const notionData = results.reverse().map((page) => {
     return {
       id: page.id,
+      index: page.properties.index.number,
       total: page.properties.total.formula.number,
       food: page.properties.food.number,
       book: page.properties.book.number,
@@ -29,24 +30,3 @@ module.exports = async function getNotionApi() {
 
   return notionData;
 };
-
-// module.exports = async function getNotionApi() {
-//   const { results } = await notion.databases.query({
-//     database_id,
-//   });
-
-//     const notionData = results.reverse().map((page) => {
-//       return {
-//         id: page.id,
-//         total: page.properties.total.number,
-//         food: page.properties.food.number,
-//         book: page.properties.book.number,
-//         pencil: page.properties.pencil.number,
-//         good: page.properties.good.number,
-//         heart: page.properties.heart.number,
-//         name: page.properties.name.title[0].text.content,
-//       };
-//     });
-
-//     return notionData;
-// };
