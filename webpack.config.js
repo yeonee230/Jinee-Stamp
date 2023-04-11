@@ -5,7 +5,6 @@ module.exports = {
     entry: {
         main: Base_url + "main.js",
     },
-    mode: 'development',
     plugins: [
       new MiniCssExtractPlugin({
         filename: "css/styles.css",

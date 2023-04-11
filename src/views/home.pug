@@ -14,11 +14,16 @@ block content
             tr
                 th=value.index
                 th=value.name
-                td(data-id=value.id data-name="food")=value.food ? value.food : 0
-                    //- a(href="/" data-id=value.id )#btnFood=value.food
-                    //- a(href="/" data-id=value.id )#btnBook=value.book
-                td(data-id=value.id data-name="pencil")=value.pencil ? value.pencil : 0
-                td(data-id=value.id data-name="good")=value.good ? value.good : 0
+                td(data-id=value.id data-name="food")
+                    span#decrease-btn(data-id=value.id data-name="food" data-type="dec" ) -
+                    span#value=value.food ? value.food : 0
+                    span#increase-btn(data-id=value.id data-name="food" data-type="inc") + 
+                td(data-id=value.id data-name="pencil")
+                    span#decrease-btn(data-id=value.id data-name="pencil" data-type="dec") -  
+                    span#value=value.pencil ? value.pencil : 0
+                    span#increase-btn(data-id=value.id data-name="pencil" data-type="inc")   + 
+                td(data-id=value.id data-name="good")
+                    span#decrease-btn(data-id=value.id data-name="good" data-type="dec") -  
+                    span#value=value.good ? value.good : 0
+                    span#increase-btn(data-id=value.id data-name="good" data-type="inc")   + 
                 th#total(data-id=value.id )=value.total
-                th=value.name
-                th=value.index

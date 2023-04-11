@@ -6,7 +6,10 @@ html(lang="en")
         title #{pageTitle} | Jinee-stamp
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css")
         link(rel="stylesheet" href="/static/css/styles.css")
-        link(rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css")
+        link(rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css")    
+        style(type="text/css").
+            #decrease-btn { margin: 10px; border: 1px #6fbcf7 solid; border-radius: 5px; background-color: #6fbcf7; padding: 4px 20px; }
+            #increase-btn { margin: 10px; border: 1px pink solid; border-radius: 5px; background-color: pink; padding: 4px 20px; }    
     body
         main 
             block content
