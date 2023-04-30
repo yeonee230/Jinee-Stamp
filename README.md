@@ -10,8 +10,8 @@ https://jinee-stamp-yeonee230.koyeb.app/
 * Notion API를 사용해 노션을 DB로 활용하기 
 
 ## 사용 기술
-* Front-end : Pug, MVP.css(https://andybrewer.github.io/mvp/)
-* Back-end : NodeJS
+* Front-end : Pug, JS, MVP.css(https://andybrewer.github.io/mvp/)
+* Back-end : NodeJS, Express
 * Etc : NotionAPI 
 
 ## 주요 기능
@@ -24,5 +24,3 @@ https://jinee-stamp-yeonee230.koyeb.app/
 밥 🍚 </br>
 연필 ✏️ </br>
 박수👏🏻 </br>
-박수👏🏻 </br>
-
