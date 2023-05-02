@@ -29,7 +29,7 @@ https://jinee-stamp-yeonee230.koyeb.app/
 ## 시연
 * 칭찬도장 실시간 추가/삭제
 
-<video width="200" height="140" src="https://user-images.githubusercontent.com/115549917/235429021-9d60e485-da03-4ebf-b741-c5c14fa7d36a.mov"></video>
+<video width="200" height="140" src="https://user-images.githubusercontent.com/115549917/235597166-8599e4df-6555-42ef-81c9-86994cb9dda7.mov"></video>
 
 ***
 
